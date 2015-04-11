@@ -1,0 +1,16 @@
+This script traverses directories recursively and for any filing having a .json extension,it tries to lint it
+and if the parsing fails, it prints the line where it failing along with absolute file name.
+
+It depends on the following packages for Perl in debian:
+
+libjson-perl
+libgetopt-long-descriptive-perl
+
+It can be installed by running 
+sudo apt-get update;sudo apt-get install libjson-perl libgetopt-long-descriptive-perl ;
+on debian boxes.
+
+
+It can be made into a binary and installed on other OS flavors so that the dependency wont matter.
+
+
